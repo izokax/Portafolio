@@ -1,0 +1,1256 @@
+:root {
+    --blue-primari: #101b38;
+    /* BLANCOS */
+    --white: #ffffff;
+    --white-secondary: #FDFDFD;
+    --white-terciary: #EDEDED;
+
+    /* GRIS */
+    --gris: #b5b2b29e;
+    --gris-bar: #999797;
+    /* hover */
+    --hover: #1C2C55;
+    --blue-bajito: #05aecf;
+    /* footer */
+    --footer-color: #131414;
+    ;
+
+    /* dark mode */
+    @media(prefers-color-scheme:dark) {
+        --blue-primari: #1C2C55;
+        /* BLANCOS */
+        --white: #ffffff;
+        --white-secondary: #FDFDFD;
+        --white-terciary: #EDEDED;
+
+        /* GRIS */
+        --gris: #b5b2b29e;
+        /* hover */
+        --hover: #101b38;
+
+    }
+
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue-primari);
+}
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.Contactame {
+    position: relative;
+
+
+    padding: 12px;
+    border: solid;
+
+}
+
+.Contactame ul li a {
+    position: relative;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Container_Port {
+    background-color: var(--blue-primary);
+    overflow: auto;
+    overflow-y: auto;
+}
+
+.Container_Port-ini--aside h1 {
+    color: var(--white);
+
+}
+
+.Menu-androip {
+    display: none;
+}
+
+.bars-menu {
+    display: none;
+}
+
+
+
+
+.logo-responsive {
+    display: none;
+}
+
+.Container_Port-ini--about-mi-izo>div {
+    display: none;
+}
+
+.Container_Port-ini--about-mi-izo>div.active {
+    display: flex;
+}
+
+#about-link.active,
+#experience-link.active,
+#projects-link.active {
+    color: var(--hover);
+    padding-left: 8px;
+}
+
+#imagenjuniorresponsive{
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+#Diseñador_UI {
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.6em;
+    width: 100%;
+    bottom: 30%;
+
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
+/* #imagenes{
+    position: relative;
+    width: 100%;
+    height: 100%;
+} */
+
+/* modificacion de la barra de scroll */
+/* .Container_Port::-webkit-scrollbar {
+    width: 12px;
+    background-color: var(--blue-primari);
+} */
+.Container_Port {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-primari);
+    transition: all;
+    transition-duration: .3s;
+    overflow: auto;
+    /* Permitir el desplazamiento dentro de este contenedor */
+}
+
+.Container_Port::-webkit-scrollbar {
+    width: 0;
+}
+
+.Container_Port-ini {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* padding: 40px 0; */
+    display: flex;
+    flex-direction: column;
+    transition: all .3s;
+
+}
+
+/* menu */
+.Menu {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    /* border-bottom: 1px solid var(--hover); */
+    position: fixed;
+    background-color: var(--blue-primari);
+    z-index: 9999;
+
+
+}
+
+.Menu img {
+    width: 80px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.Container_logo-menu {
+    position: relative;
+    text-align: center;
+}
+
+.Container_logo-menu a {
+    color: var(--blue-bajito);
+    font-size: 20px;
+
+}
+
+.Menu-destok {
+    position: relative;
+
+}
+
+.Menu-destok ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    gap: 15%;
+}
+
+.Menu-destok ul li a {
+    color: var(--white);
+    transition: all .2s;
+}
+
+.Menu-destok ul li a:hover {
+    color: var(--blue-bajito);
+    cursor: pointer;
+}
+
+/* img */
+.img-junior {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
+
+#imagenjunior {
+    width: 100%;
+    
+
+}
+.Container_logo-menu{
+    left: 12%;
+}
+
+/* Container__Main */
+
+.Container__Main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Asegurar que ocupe toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+}
+
+.btn__contac-menu a {
+    padding: 12px;
+    background-color: var(--blue-bajito);
+    color: var(--white);
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+    margin-left: 26%;
+}
+
+
+.btn__contac-menu a:hover {
+    box-shadow: 0 0 8px 6px var(--blue-bajito);
+}
+
+
+
+.aside {
+    position: static;
+}
+
+.Container_Port-ini--aside {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 20%;
+    transition: all;
+    transition-duration: .3s;
+    margin-bottom: 5%;
+}
+
+.Container_Port-ini--aside h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.Container_Port-ini--aside h2 {
+    font-size: 1em;
+    color: var(--white-terciary);
+}
+
+.Container_Port-ini--aside p {
+    font-size: 1.6em;
+    color: var(--white);
+}
+
+#unpoco {
+    /* interacion de usuario */
+    position: absolute;
+    /* display: flex; */
+}
+
+/* links */
+.links {
+    position: relative;
+    width: auto;
+    padding: 16px;
+    margin-top: 60px;
+}
+
+.links ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.links ul li a {
+    color: var(--white);
+    padding: 8px 0;
+    transition: all 0.3s;
+}
+
+.links ul li a:hover {
+    padding-left: 8px;
+    color: var(--gris);
+}
+
+.Container_Port__aside-img {
+    position: absolute;
+    display: flex;
+    left: 0;
+    flex-direction: column;
+    height: 100px;
+    align-items: end;
+    width: auto;
+    transition: all ease-in-out;
+    transition-duration: .3s;
+    padding: 15px;
+}
+
+.contene-port-stile-padding {
+    padding: 70px 0;
+}
+
+.Container_Port__aside-img ul li {
+    margin: 12px 0;
+}
+
+.Container_Port__aside-img a {
+    height: 0;
+}
+
+.Container_Port__aside-img a i {
+    color: var(--white);
+    padding: 10px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.Container_Port__aside-img a i:hover {
+    color: var(--blue-bajito);
+    border: 1px solid var(--blue-bajito);
+    padding: 12px;
+    margin-left: 15%;
+
+
+
+}
+
+/* seccion about mi */
+.Container_Port_ini--about {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+/* barra */
+.progres {
+    width: 100%;
+
+    padding: 12px;
+
+}
+
+.progres h3 {
+    color: var(--white);
+}
+
+.progres h3 span {
+    color: var(--blue-bajito);
+}
+
+.bar {
+    width: 100%;
+    border: none;
+    height: 20px;
+    margin: 8px 0;
+    background-color: var(--gris-bar);
+    border-radius: 9px;
+}
+
+.bar span {
+    position: relative;
+    width: 90%;
+    padding: 8px;
+    display: block;
+    height: 100%;
+    border-radius: 0.3rem;
+    background: var(--white);
+    width: 90%;
+    /* Ajuste para que la barra esté llena al 90% */
+}
+
+/* modificacion de la barra de scroll */
+/* .Container_Port_ini--about::-webkit-scrollbar {
+    width: 12px;
+    background-color: var(--blue-primari);
+} */
+.Container_Port_ini--about-text {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    padding: 2em;
+    line-height: 1.3;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    text-align: -webkit-left;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.Container_Port_ini--about-text p {
+    color: var(--white);
+}
+
+/* seccion about mi 2pte */
+.logo {
+    border-radius: 1em;
+    height: 12em;
+}
+
+.Container_Port-ini--about-mi {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container_Port-ini--about-mi-izo {
+
+    position: absolute;
+    padding: 20px;
+    gap: 3em;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    /* Cambiado de column a row */
+    justify-content: center;
+    /* Para centrar horizontalmente los elementos */
+    align-items: center;
+    /* Para centrar verticalmente los elementos */
+}
+
+.Container_Port-ini--about-mi-izo.active {
+    display: flex;
+    opacity: 1;
+}
+
+.Container__port-afinidad {
+    padding: 12px 0;
+}
+
+.Container__port-afinidad h2 {
+    margin-bottom: 14px;
+    font-size: 2em;
+    color: var(--white-secondary);
+}
+
+.Container__port-afinidad h3 {
+    font-size: 1.3em;
+    color: var(--white-secondary);
+    font-weight: 400;
+    width: 90%;
+}
+
+/* botones flecha */
+.arrow-next {
+    color: var(--white);
+    font-size: 25px;
+    position: absolute;
+    right: 5%;
+    transition: all 0.2s;
+    z-index: 1;
+}
+
+.arrow-next:hover {
+    color: var(--gris);
+}
+
+.arrow-previous {
+    color: var(--white);
+    font-size: 25px;
+    position: absolute;
+    left: 5%;
+    transition: all 0.2s;
+    z-index: 1;
+}
+
+.arrow-previous:hover {
+    color: var(--gris);
+}
+
+/* skills */
+.Container_skills {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 7%;
+    /* background-color: var(--hover); */
+
+}
+
+
+.Container_skills h2 {
+    font-size: 2em;
+    color: var(--white);
+    margin: 90px 0 15px 0;
+}
+
+/* habilidaes grid */
+.grid {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.Container_skills-Parts {
+    position: relative;
+    width: auto;
+    padding: 30px;
+    transform: all;
+    transition-duration: .3s;
+    border-radius: 12px;
+    background-color: var(--blue-primari);
+    border: 1px solid var(--blue-bajito);
+
+}
+
+.Container_skills-Parts:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+.Container_skills-Parts h2 {
+    font-size: 1.5em;
+    color: var(--blue-bajito);
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin: 16px 0;
+}
+
+.Container_skills-Parts p {
+    line-height: 1.4;
+    font-size: 1.2em;
+    text-align: start;
+    color: var(--white);
+    padding-bottom: 8px;
+}
+
+/* iconos */
+.mobile {
+    position: relative;
+    display: flex;
+    align-items: start;
+    top: -5px;
+}
+
+.Icon {
+    position: relative;
+    display: inline-block;
+    align-items: start;
+    top: -5px;
+}
+
+.Icon:nth-child(2) {
+    align-items: center;
+    display: inline-block;
+}
+
+.tablas {
+    position: relative;
+    display: flex;
+    align-items: start;
+    top: -5px;
+}
+.ver-mas {
+    position: relative;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: var(--footer-color);
+    background-color: var(--white);
+    width: auto;
+    margin: 0 auto;
+    bottom: -20%;
+    font-size: 1.2em;
+    border: none;
+    transition: all .3s ease-in-out;
+    z-index: 999;
+    margin-top: 30px;
+}
+.ver-mas:hover {
+    cursor: pointer;
+    color: var(--blue-bajito);
+
+}
+.ver-masbehance{
+    position: relative;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: var(--footer-color);
+    background-color: var(--white);
+    width: auto;
+    margin: 0 auto;
+    font-size: 1.2em;
+    transition: all .3s ease-in-out;
+    z-index: 999;
+    margin: 0 auto;
+    
+    
+
+}
+.ver-masbehance:hover {
+    cursor: pointer;
+    color: var(--blue-bajito);
+
+}
+
+
+/* segundo .Container_skills  */
+.Container_skills:nth-child(2) {
+    margin-top: 20%;
+    position: relative;
+}
+
+#Skill {
+    margin-top: 10em;
+
+}
+
+#Photoshop,
+#Figma {
+    height: auto;
+}
+
+#ilustrador {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.Container_skills:nth-child(2) .Container_skills-Parts {
+    margin: 20px auto;
+}
+
+/* container__experiencies */
+
+.container__experiencies {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 4% 0;
+}
+
+.container__experiencies-tecnic {
+    position: relative;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container__experiencies-tecnicp h1 {
+    text-align: start;
+
+}
+
+.container__experiencies-tecnic p {
+    color: var(--white);
+    width: 60%;
+    text-align: start;
+}
+
+#tex-expe {
+    text-align: start;
+}
+
+/* aside images ecperiencia */
+.conatainer__experiencies-trabajos--img {
+    position: relative;
+    display: flex;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    /* left: -5%; */
+    margin-bottom: 70px;
+
+}
+
+.conatainer__experiencies-trabajos--img img {
+    display: inline-block;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 8px;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    background-color: var(--footer-color);
+}
+
+.footer-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--blue-bajito);
+}
+
+.footer-content h1 {
+    color: var(--white);
+    width: 8%;
+    margin: 0 auto;
+    transition: all .3s ease-in-out;
+
+}
+
+.footer-content h1:hover {
+    cursor: pointer;
+    color: var(--blue-bajito);
+
+}
+
+.footer-content ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content ul li a {
+    font-size: 1em;
+    margin: 12px 0;
+    list-style: none;
+    color: var(--white);
+    transition: all .3s ease-in-out;
+}
+
+.footer-content ul li a:hover {
+    cursor: pointer;
+    color: var(--blue-bajito);
+}
+
+.mover {
+    margin-right: 8px;
+}
+
+#link-active {
+    color: var(--blue-bajito);
+
+}
+
+#link-active:hover {
+    color: var(--white);
+}
+
+.Derechos {
+    position: relative;
+
+    color: var(--white);
+    font-size: 1em;
+    cursor: pointer;
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+/* portafolio2 */
+#grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+}
+
+.gridp2 {
+    margin-top: 10em;
+}
+
+.Volver {
+    position: absolute;
+    padding: 15px;
+    border: none;
+    top: 15%;
+    left: 8%;
+    z-index: 999;
+    position: fixed;
+    background-color: transparent;
+
+}
+
+.Volver a {
+    font-size: 1.5em;
+    color: var(--white);
+
+}
+
+.Volver a i {
+    margin-right: 8px;
+}
+
+.Volver a:hover {
+    color: var(--blue-bajito);
+}
+
+/* portafolio-contac */
+.Container-Form {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5em 0;
+
+}
+
+.Container-Form h1 {
+    color: var(--white);
+    margin: 12px 0;
+    font-size: 3em;
+}
+
+.Container-Form p {
+    color: var(--white);
+    margin: 12px 0;
+
+}
+
+form {
+    position: relative;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: var(--footer-color);
+    border-radius: 12px;
+    transition: all 3s;
+}
+
+form label {
+    font-size: 1.3em;
+    color: var(--white);
+    margin-top: 10px;
+}
+
+form input {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--gris-bar);
+    background-color: var(--footer-color);
+
+}
+
+form textarea {
+    border-radius: 8px;
+    margin-bottom: 12px;
+    resize: none;
+    text-align: start;
+    border: 1px solid var(--gris-bar);
+    background-color: var(--footer-color);
+    color: var(--white);
+}
+
+.btn-enviar {
+    position: relative;
+    width: 200px;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 0 auto;
+    border: none;
+    color: var(--footer-color);
+    background-color: var(--white);
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+
+.btn-enviar:hover {
+    background-color: var(--blue-bajito);
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width:900px) {
+#imagenjuniorresponsive{
+    display: block;
+    display: block;
+    width: 100%;
+    max-height: max-content;
+    margin-top: 13%;
+}
+#imagenjunior{
+    display: none;
+}
+.ver-mas{
+    display: none;
+}
+    .conatainer__experiencies-trabajos--img {
+        width: 90%;
+        margin-top: 40px ;
+        margin-bottom: 40px ;
+        /* margin: 0 auto; */
+    
+    }
+    .footer-content h1 {
+        display: none;
+    }
+
+    .Volver {
+        top: 5%;
+        z-index: 1;
+    }
+
+    form {
+        min-width: 90%;
+
+    }
+
+    .Menu-destok {
+        display: none;
+    }
+
+    .btn__contac-menu {
+        display: none;
+    }
+
+    .Container_logo-menu {
+        display: none;
+    }
+
+    .bars-menu {
+        position: absolute;
+        display: flex;
+        left: 20px;
+        top: 12px;
+        color: var(--blue-bajito);
+        background-color: var(--blue-primari);
+        border: none;
+        width: 20px;
+        padding: 0 12px;
+        justify-content: center;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .Menu-androip {
+        width: 80%;
+        height: 100vh;
+        position: absolute;
+        z-index: 9999;
+        top: 0;
+        background-color: #8095cc;
+        justify-content: center;
+
+    }
+
+    .Menu-androip li {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .Menu-androip li a {
+        color: var(--white);
+        width: 100%;
+        padding: 30px;
+
+        text-align: center;
+    }
+
+    #cerrar {
+        text-align: end;
+    }
+
+    .Container_Port {
+        flex-direction: column;
+    }
+
+    .Container_Port-ini {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        gap: 2px;
+    }
+
+    .Container_Port-ini--aside h1 {
+        width: auto;
+        font-size: 1.6rem;
+
+
+    }
+
+    .links {
+        display: none;
+    }
+
+    .Container_Port__aside-img {
+        display: none;
+    }
+
+    .Container_Port-ini--aside {
+        padding: 40px 0;
+        width: 80%;
+        margin: 0 auto;
+        gap: 0;
+        background: transparent;
+        margin-bottom: 7%;
+    }
+
+    .Container_Port_ini--about-text {
+        height: auto;
+        padding: 5px;
+    }
+
+    .Container_Port_ini--about-text p {
+        padding: 0;
+        font-size: 15px
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .Container_skills {
+        position: relative;
+        top: 15%;
+        margin: 1px;
+    }
+
+    /* aside */
+    .Container_Port-ini--about-mi-izo {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .Container__port-afinidad h3 {
+        width: auto;
+        height: auto;
+        font-size: 12px;
+
+    }
+
+    .Container_Port-ini--about-mi-izo p {
+        overflow-y: auto;
+    }
+
+    .Container__port-afinidad h2 {
+        font-size: 20px;
+    }
+
+    .contene-port-stile-padding {
+        padding: 20px 0;
+    }
+
+    /* habilidades */
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Container_skills h2 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    #unpoco {
+        align-items: initial;
+    }
+
+    .Container_Port-ini--aside {
+
+        transition: all 0.3s ease;
+    }
+
+    .Container_Port-ini--aside.active {
+        display: flex;
+    }
+
+    .Container_Port_ini--about {
+        gap: 20px;
+    }
+
+    .arrow-booton i {
+        color: var(--white);
+        border-bottom: 1px solid var(--blue-bajito);
+
+    }
+
+    #top {
+        color: var(--white);
+        border-top: 1px solid var(--blue-bajito);
+        border-bottom: none;
+    }
+
+    #Diseñador_UI {
+        font-size: 1em;
+        bottom: 15%;
+    }
+
+    @media only screen and (max-width:550px) {
+        .Container_skills-Parts {
+            padding: 14px;
+        }
+
+        .logo {
+            display: none;
+        }
+
+        .logo-responsive {
+            display: block;
+            position: relative;
+            float: right;
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+            margin: 5px 0 5px 5px;
+        }
+
+        .Container_Port-ini--aside p {
+            font-size: 12px;
+        }
+
+        .Container_skills {
+            margin-top: 15%;
+        }
+
+        .grid {
+            width: 100%;
+            padding: 15px;
+        }
+
+        .container__experiencies-tecnic p {
+            width: auto;
+        }
+
+        .Container_Port-ini--about-mi {
+            position: initial;
+
+        }
+
+        .Container__port-afinidad {
+            margin-bottom: -50%;
+        }
+
+        .Container_Port-ini {
+            margin-bottom: 40%;
+        }
+
+        .container__experiencies-tecnic {
+            width: 100%;
+        }
+
+        .footer-content {
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 100%;
+        }
+
+        .footer-content ul li a {
+            margin: 4px 0;
+        }
+
+        .footer {
+            padding: 4px;
+        }
+
+    }
+
+}

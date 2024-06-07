@@ -1,0 +1,54 @@
+
+
+/* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: max-content;
+    height: auto;
+    margin: 0 auto;
+    gap: 10px; */
+
+
+    /* .Container_Port_ini--about::-webkit-scrollbar {
+    width: 12px;
+    background-color: var(--blue-primari);
+} */
+
+/* const slider = document.querySelector('.conatainer__experiencies-trabajos--img');
+    
+let slideIndex = 0;
+
+function showSlide(slideIndex) {
+  const images = slider.querySelectorAll('img');
+  images.forEach((img, index) => {
+    img.style.transform = `translateX(-${sliderExp * 100}%)`;
+    if (index === slideIndex) {
+      img.style.display = 'block';
+    } else {
+      img.style.display = 'none'; 
+    }
+  });
+}
+
+function nextSlide () {
+  slideIndex = (slideIndex + 1) % 6; 
+  showSlide(slideIndex);
+}
+
+setInterval(nextSlide, 6000); */
+
+
+
+/* const slider = document.querySelector('.conatainer__experiencies-trabajos--img');
+    const images = slider.querySelectorAll('img');
+    let sliderExp = 0;
+    function showSliderExp(sliderExp) {
+        images.forEach((img, index) => {
+            img.style.transform = `translateX(-${sliderExp * 100}%)`;
+        });
+    }
+
+    function nextSliderExp() {
+        sliderExp = (sliderExp + 1) % images.length;
+        showSliderExp(sliderExp);
+    }
+    setInterval(nextSliderExp, 6000); */
